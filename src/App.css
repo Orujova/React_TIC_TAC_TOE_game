@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: teal;
+}
+
+main {
+  width: 600px;
+  margin: 10px auto;
+  aspect-ratio: 1 / 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+main div {
+  background-color: #fff;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+main div:hover {
+  background-color: #e0e0e0;
+}
+
+.play-again-btn {
+  background-color: rgb(242, 145, 145);
+  color: #fff;
+  font-size: 18px;
+  border: none;
+}
+
+@media screen and (max-width: 650px) {
+  main {
+    width: 80%;
+  }
+  main div {
+    font-size: 28px;
+  }
+}
